@@ -1,2 +1,2 @@
-build --crosstool_top=//tools/cpp:default-toolchain --compiler=clang38
-test --crosstool_top=//tools/cpp:default-toolchain --compiler=clang38
+build --cxxopt=-std=c++20 --host_cxxopt=-std=c++20 
+test --cxxopt=-std=c++20 --host_cxxopt=-std=c++20

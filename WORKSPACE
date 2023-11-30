@@ -1,7 +1,13 @@
-new_http_archive(
-    name = "gtest",
-    build_file = "third_party/gtest/gtest.BUILD",
-    sha256 = "b58cb7547a28b2c718d1e38aee18a3659c9e3ff52440297e965f5edffe34b6d0",
-    strip_prefix = "googletest-release-1.7.0",
-    url = "https://github.com/google/googletest/archive/release-1.7.0.zip",
+workspace(name = "ccproducers")
+load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
+
+
+# GoogleTest/GoogleMock framework. Used by most unit-tests.
+#       https://github.com/google/googletest
+http_archive(
+  name = "com_google_googletest",  # 2023-08-02T16:45:10Z
+  sha256 = "c4f675500e09da97fd5a2b9c3fdadf48de858a036db565d52e6835c96eeea147",
+  strip_prefix = "googletest-843976e4f582ccb76cf87e0f128585324335779b",
+  # Keep this URL in sync with ABSL_GOOGLETEST_COMMIT in ci/cmake_common.sh.
+  urls = ["https://github.com/google/googletest/archive/843976e4f582ccb76cf87e0f128585324335779b.zip"],
 )

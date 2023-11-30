@@ -3,6 +3,6 @@ cc_library(
     licenses = ["permissive"],
     visibility = ["//visibility:public"],
     deps = [
-        "@gtest//:gtest",
+        "@com_google_googletest//:gtest_main",
     ],
 )

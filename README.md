@@ -1,6 +1,6 @@
 # ccproducers
 
-[![Build Status](https://travis-ci.org/dinowernli/ccproducers.svg?branch=master)](https://travis-ci.org/dinowernli/ccproducers)
+Fork from dinowernli/ccproducers. Various bug fixes and code cleanup.
 
 A producer graph implementation in c++. For details on producers, see http://google.github.io/dagger/producers.html.
 
